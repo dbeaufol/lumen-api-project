@@ -15,7 +15,7 @@ $app->get('/', function () use ($app) {
    return $app->version();
 });
 
-
+//un exemple d'url http://192.168.33.10:8000/forum/liste_membre
 
 $app->group(['prefix' => 'forum','namespace' => 'App\Http\Controllers'], function($app)
 {
@@ -25,6 +25,12 @@ $app->group(['prefix' => 'forum','namespace' => 'App\Http\Controllers'], functio
     $app->put('user/{id}','UserController@updateUser');
     $app->delete('user/{id}','UserController@deleteUser');
 });
+
+$app->group(['prefix' => 'forum','namespace' => 'App\Http\Controllers'], function($app)
+{
+    $app->get('/liste_post','PostController@index');
+});
+
 
 $app->group(['prefix' => 'forum','namespace' => 'App\Http\Controllers'], function($app)
 {

@@ -12,6 +12,9 @@ class DatabaseSeeder extends Seeder {
     public function run() {
 
       {
+
+
+
       /* DB::table('users')->insert([
            'pseudo' => str_random(10),
            'email' => str_random(10).'@gmail.com',
