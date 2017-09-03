@@ -56,3 +56,12 @@ $app->group(['prefix' => 'forum','namespace' => 'App\Http\Controllers'], functio
     $app->put('statistique/{id}','StatistiqueController@updateStatistique');
     $app->delete('statistique/{id}','StatistiqueController@deleteStatistique');
 });
+
+$app->group(['prefix' => 'forum','namespace' => 'App\Http\Controllers'], function($app)
+{
+    $app->get('liste_reponse','ReponseController@index');
+    $app->get('reponse/{id}','ReponseController@getReponse');
+    /*$app->post('reponse','ReponseController@createReponse');
+    $app->put('reponse/{id}','ReponseController@updateReponse');
+    $app->delete('reponse/{id}','ReponseController@deleteReponse');*/
+});
