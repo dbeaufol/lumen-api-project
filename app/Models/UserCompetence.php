@@ -10,11 +10,12 @@ class Usercompetence extends Model {
     /**
        * Define an inverse one-to-many relationship with App\competence.
        */
+       /*
       public function post(){
           return $this->belongsTo('App\Competence');
       }
       public function user(){
           return $this->belongsTo('App\User');
-      }
+      }*/
 }
 ?>

@@ -10,9 +10,9 @@ class Statistique extends Model {
     /**
        * Define an inverse one-to-many relationship with App\user.
        */
-
+/*
       public function user(){
           return $this->belongsTo('App\User');
-      }
+      }*/
 }
 ?>
