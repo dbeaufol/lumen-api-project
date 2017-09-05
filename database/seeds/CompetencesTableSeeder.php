@@ -1,5 +1,5 @@
 <?php
-
+//test faire un pul resquest
 use Illuminate\Database\Seeder;
 
 class CompetencesTableSeeder extends Seeder
