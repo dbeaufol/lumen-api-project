@@ -137,7 +137,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     echo "mysql-server-5.5 mysql-server/root_password_again password root" | debconf-set-selections
     sudo apt-get -y install mysql-server
     # Create the database
-    mysql -u root --password="root" -Be "CREATE DATABASE akaforum"
+    mysql -u root --password="root" -Be "CREATE DATABASE forum"
     mysql -u root --password="root" -Be "GRANT USAGE ON *.* TO 'aka'@'localhost' IDENTIFIED BY '0000';"
     mysql -u root --password="root" -Be "GRANT ALL PRIVILEGES ON akaforum.* TO 'aka'@'localhost';"
     mysql -u root --password="root" -Be "FLUSH PRIVILEGES"
